@@ -117,10 +117,52 @@ header nav .menu li:last-child a {
 header nav .menu :is(.activo, a:hover){
     color: var(--colorPrincipal);
 }
+
+header nav:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
 /*final header*/
 
 
+/*principio de footer*/
 
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: var(--colorSecundario);
+    color: white;
+    padding: var(--marginGrid);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--colorPrincipal);
+}
+
+.arriba{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 2em;
+}
+
+.arriba a{
+    color: var(--colorPrincipal);
+}
+
+
+
+/*final de footer*/
 /*media querys esta primera a 1004px*/
 
 @media (min-width: 62.750em){
@@ -145,9 +187,7 @@ header nav .menu :is(.activo, a:hover){
     }
 
 }
-
-
-/* breakpoint 700px mas o menos mirarlo en la calculadora a cuanto equivale*/
+/* breakpoint 768px mas o menos mirarlo en la calculadora a cuanto equivale*/
 @media(min-width: 48em){
     header .nav_top a span{
         display: inline;
