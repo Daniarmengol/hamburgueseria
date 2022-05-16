@@ -289,7 +289,7 @@ section article{
     border-bottom: 1px solid #aaa;
 }
 
-section article h3{
+section h3{
     font-weight: 700;
     margin: 0.5em 0;
     font-size: 110%;
@@ -323,6 +323,45 @@ margin-bottom: var(--marginGrid);
 
 /*final Ourservices*/
 
+/*inicio de about us*/
+
+section h4{
+    color: var(--colorPrincipal);
+    margin-bottom: 0.5em;
+}
+
+section .flex{
+    padding: 0 var(--marginGrid);
+} 
+
+#aboutus figure{
+    width: 85%;
+    margin: 2em auto;
+}
+
+#aboutus figure .marco{
+    border: 3px solid var(--colorPrincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+#aboutus figure .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+#aboutus figure:hover :is(.marco, .marco img){
+    transform: rotateZ(0deg) ;
+}
+
+#aboutus .flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 /* breakpoint 768px */
 @media (min-width: 48em){
     header .nav_top a span{
@@ -347,6 +386,17 @@ margin-bottom: var(--marginGrid);
         border-left: 1px solid #aaa;
     }
         
+    #aboutus .flex{
+        flex-direction: row;
+        padding-top: var(--marginGrid);
+    }
+
+    #aboutus figure{
+        width: 90%;
+        margin: 0.5em auto;
+        
+    }
+    
 
 
     
