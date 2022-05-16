@@ -354,6 +354,11 @@ section .flex{
     transform: rotateZ(0deg) ;
 }
 
+#aboutus .flex{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -381,6 +386,17 @@ section .flex{
         border-left: 1px solid #aaa;
     }
         
+    #aboutus .flex{
+        flex-direction: row;
+        padding-top: var(--marginGrid);
+    }
+
+    #aboutus figure{
+        width: 90%;
+        margin: 0.5em auto;
+        
+    }
+    
 
 
     
