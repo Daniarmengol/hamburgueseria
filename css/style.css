@@ -362,6 +362,42 @@ section .flex{
 
 /* final de about us */
 
+/* PRINCIPIO DE OURBLOGS */
+ 
+div>.fechaimagen1{
+
+    background-color: tomato;
+    width: 30px;
+    height: 0 auto;
+}
+
+#ourblog .grid{
+
+    display: grid;
+    /*grid-template-columns =equivalente a flexbox*/
+    /*grid-template-rows =equivalente a column*/
+    gap: var(--marginGrid);
+    padding: 0 var(--marginGrid);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FINAL DE OURBLOGS */
+
 
 
 /* breakpoint 768px */
